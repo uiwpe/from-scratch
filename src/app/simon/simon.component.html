@@ -1,0 +1,13 @@
+<div class="simon">
+  <div class="simon-controls">
+    <button class="simon-control {{control.color}}"
+            (click)="game.press(control)"
+            [disabled]="!game.rules.length"
+            [class.active]="control.active"
+            *ngFor="let control of game.controls"></button>
+
+    <div class="simon-start" [class.visible]="!game.rules.length" (click)="game.start()">
+      GO
+    </div>
+  </div>
+</div>
