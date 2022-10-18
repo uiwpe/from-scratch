@@ -1,0 +1,40 @@
+.auth{
+
+  width: 100%;
+  height: 90vh;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  .form {
+    min-width: 420px;
+    &-control {
+      width: 100%;
+      height: 42px;
+      margin: 12px auto;
+      box-sizing: border-box;
+      position: relative;
+      input {
+        width: 100%;
+        height: inherit;
+        border: none;
+        box-sizing: border-box;
+      }
+
+      button {
+        position: absolute;
+        width: 64px;
+        height: 42px;
+      }
+    }
+  }
+  .submit {
+    height: 100px;
+  }
+
+
+  .submit {
+    border: 1px solid #f9f9f9;
+  }
+}

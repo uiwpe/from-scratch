@@ -1,0 +1,13 @@
+<div class="auth" *ngIf="authForm">
+  <form [formGroup]="authForm" class="form">
+    <div class="form-control">
+      <input type="text" placeholder="Login" name="login" formControlName="login">
+    </div>
+    <div class="form-control">
+      <input type="password" placeholder="Password" name="password" formControlName="password">
+    </div>
+    <div class="submit form-control">
+      <button type="submit" #button fsAvoid [active]="true"> Sign In </button>
+    </div>
+  </form>
+</div>
